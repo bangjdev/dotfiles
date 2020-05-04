@@ -1,0 +1,79 @@
+! black
+*.color0  : #2e282e
+*.color8  : #403741
+
+! red
+*.color1  : #C8293F
+*.color9  : #CA407E
+
+! green
+*.color2  : #DCA484
+*.color10 : #F8D2BD
+
+! yellow
+*.color3  : #ffc857
+*.color11 : #ffd171
+
+! blue
+*.color4  : #E3B195
+*.color12 : #FFDCC8
+
+! magenta
+*.color5  : #AC1358
+*.color13 : #CA407E
+
+! cyan
+*.color6  : #D9583C
+*.color14 : #E57860
+
+! white
+*.color7  : #E8E2DB
+*.color15 : #F7EDE2
+
+*.background: #000000
+*.foreground: #F8F8F2
+!! Dracula Xresources palette
+!*.foreground: #F8F8F2
+!*.background: #000000
+!*.color0:     #000000
+!*.color8:     #4D4D4D
+!*.color1:     #FF5555
+!*.color9:     #FF6E67
+!*.color2:     #50FA7B
+!*.color10:    #5AF78E
+!*.color3:     #F1FA8C
+!*.color11:    #F4F99D
+!*.color4:     #BD93F9
+!*.color12:    #CAA9FA
+!*.color5:     #FF79C6
+!*.color13:    #FF92D0
+!*.color6:     #8BE9FD
+!*.color14:    #9AEDFE
+!*.color7:     #BFBFBF
+!*.color15:    #E6E6E6
+!
+URxvt.font:            xft:hack:pixelsize=14,xft:xos4 Terminus:style=Regular,MonacoB Nerd Font Mono:style=Regular
+URxvt.letterSpace: 0
+! URxvt.font: xft:DejaVu Sans Mono:size=10
+
+URxvt.boldFont:		xft:mono:bold:pixelsize=14:antialias=true:hinting=true
+URxvt.scrollBar:	false
+
+!! Copy Paste & Other Extensions
+URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
+URxvt.copyCommand: xclip -i -selection clipboard
+URxvt.pasteCommand: xclip -o -selection clipboard
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.urlLauncher: firefox
+URxvt.underlineURLs: true
+URxvt.urlButton: 1
+
+Xft*dpi:       96
+Xft*antialias: True
+Xft*hinting:   Full
+urxvt*depth: 32

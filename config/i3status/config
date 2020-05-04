@@ -1,0 +1,86 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+general {
+        output_format = "i3bar"
+        colors = false 
+        markup = pango
+        interval = 5
+        color_good = '#2f343f'
+		color_degraded = '#ebcb8b'
+		color_bad = '#ba5e57'
+}
+
+order += "load"
+order += "cpu_temperature 0"
+order += "disk /"
+order += "disk /home"
+order += "wireless _first_"
+order += "ethernet _first_"
+order += "battery all"
+order += "memory"
+order += "tztime local"
+order += "volume master"
+
+load {
+        format = "<span background='#ffffff'>  %1min </span>"
+}
+
+cpu_temperature 0 {
+        format = "<span background='#bf616a'>  %degrees °C </span>"
+        path = "/sys/class/thermal/thermal_zone0/temp"
+}
+
+disk "/" {
+        format = "<span background='#fec7cd'>  %free Free </span>"
+}
+
+disk "/home" {
+        format = "<span background='#a1d569'>  %free Free </span>"
+}
+
+volume master {
+        format = "<span background='#ebcb8b'> 🔊: %volume </span>"
+        format_muted = "<span background='#ebcb8b'> 🔇 %volume </span>"
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
+}
+
+wireless _first_ {
+        format_up = "<span background='#b48ead'>  %essid </span>"
+        format_down = "<span background='#b48ead'>  Nop </span>"
+}
+
+ethernet _first_ {
+        format_up = "<span background='#88c0d0'>  %ip </span>"
+        format_down = "<span background='#88c0d0'>  Disconnected </span>"
+}
+
+battery all {
+        format = "<span background='#a3be8c'> %status %percentage </span>"
+        format_down = "No Battery"
+        last_full_capacity = true
+        integer_battery_capacity = true
+        low_threshold = 11
+        threshold_type = percentage
+        hide_seconds = true
+        status_chr = ""
+        status_bat = ""
+        status_unk = ""
+        status_full = ""
+}
+
+memory {
+        format = "<span background='#ebcb8b'> %used / %available </span>"
+        threshold_degraded = "1G"
+        format_degraded = "MEMORY < %available"
+}
+tztime local {
+		format = "<span background='#81a1c1'> %time </span>"
+		format_time = " %a %-d %b %H:%M"
+}
