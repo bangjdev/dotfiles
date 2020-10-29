@@ -11,14 +11,11 @@ general {
         markup = pango
         interval = 5
         color_good = '#2f343f'
-		color_degraded = '#ebcb8b'
-		color_bad = '#ba5e57'
+	color_degraded = '#ebcb8b'
+	color_bad = '#ba5e57'
 }
 
-order += "load"
 order += "cpu_temperature 0"
-order += "disk /"
-order += "disk /home"
 order += "wireless _first_"
 order += "ethernet _first_"
 order += "battery all"
@@ -26,26 +23,14 @@ order += "memory"
 order += "tztime local"
 order += "volume master"
 
-load {
-        format = "<span background='#ffffff'>  %1min </span>"
-}
-
 cpu_temperature 0 {
         format = "<span background='#bf616a'>  %degrees °C </span>"
         path = "/sys/class/thermal/thermal_zone0/temp"
 }
 
-disk "/" {
-        format = "<span background='#fec7cd'>  %free Free </span>"
-}
-
-disk "/home" {
-        format = "<span background='#a1d569'>  %free Free </span>"
-}
-
 volume master {
-        format = "<span background='#ebcb8b'> 🔊: %volume </span>"
-        format_muted = "<span background='#ebcb8b'> 🔇 %volume </span>"
+        format = "<span background='#ebcb8b'>  %volume </span>"
+        format_muted = "<span background='#ebcb8b'> Muted (%volume) </span>"
         device = "default"
         mixer = "Master"
         mixer_idx = 0
@@ -57,8 +42,8 @@ wireless _first_ {
 }
 
 ethernet _first_ {
-        format_up = "<span background='#88c0d0'>  %ip </span>"
-        format_down = "<span background='#88c0d0'>  Disconnected </span>"
+        format_up = "<span background='#88c0d0'>  %ip </span>"
+        format_down = "<span background='#88c0d0'>  Nop </span>"
 }
 
 battery all {

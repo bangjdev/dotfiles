@@ -75,3 +75,6 @@ call plug#end()
 "" Key binds for plugin
 " NERDTree
 map <Tab> :NERDTreeToggle<CR>
+
+
+let g:ycm_global_ycm_extra_conf = '$HOME/.vim/ycm_extra_conf/ycm_extra_conf.py'

@@ -9,12 +9,41 @@
 # layout, use the i3-config-wizard
 #
 
-# Basic setup
+## Basic setup
 set $mod Mod1
 set $sup Mod4
 font pango:Noto Sans 9 
 set $refresh_i3status killall -SIGUSR1 i3status
 
+## Auto-start
+# Polybar
+# exec --no-startup-id /home/bangjdev/.config/polybar/launch.sh
+# exec polybar-msg cmd restart
+ 
+exec --no-startup-id nm-applet &
+exec --no-startup-id xsettingsd &
+
+
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+bar {
+        colors {
+                background #2f343f
+                statusline #2f343f
+                separator #4b5262
+
+                # colour of border, background, and text
+                focused_workspace       #2f343f #bf616a #d8dee8
+                active_workspace        #2f343f #2f343f #d8dee8
+                inactive_workspace      #2f343f #2f343f #d8dee8
+                urgent_workspace       #2f343f #ebcb8b #2f343f
+        }
+        font pango: Inconsolata Nerd Font Mono 14
+        status_command i3status
+        tray_output primary
+}
+
+## Bindsym
 
 # Use pactl to adjust volume in PulseAudio.
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -39,7 +68,7 @@ set $right semicolon
 floating_modifier Mod1
 
 # start a terminal
-bindsym Mod4+Return exec i3-sensible-terminal
+bindsym Mod4+Return exec termite
 
 # kill focused window
 bindsym Mod1+Shift+q kill
@@ -48,42 +77,42 @@ bindsym Mod1+Shift+q kill
 bindsym Mod1+d exec rofi -show run
 
 # change focus
-bindsym Mod4+$left focus left
-bindsym Mod4+$down focus down
-bindsym Mod4+$up focus up
-bindsym Mod4+$right focus right
+bindsym Mod1+$left focus left
+bindsym Mod1+$down focus down
+bindsym Mod1+$up focus up
+bindsym Mod1+$right focus right
 
 # alternatively, you can use the cursor keys:
-bindsym Mod4+Left focus left
-bindsym Mod4+Down focus down
-bindsym Mod4+Up focus up
-bindsym Mod4+Right focus right
+bindsym Mod1+Left focus left
+bindsym Mod1+Down focus down
+bindsym Mod1+Up focus up
+bindsym Mod1+Right focus right
 
 # move focused window
-bindsym Mod4+Shift+$left move left
-bindsym Mod4+Shift+$down move down
-bindsym Mod4+Shift+$up move up
-bindsym Mod4+Shift+$right move right
+bindsym Mod1+Shift+$left move left
+bindsym Mod1+Shift+$down move down
+bindsym Mod1+Shift+$up move up
+bindsym Mod1+Shift+$right move right
 
 # alternatively, you can use the cursor keys:
-bindsym Mod4+Shift+Left move left
-bindsym Mod4+Shift+Down move down
-bindsym Mod4+Shift+Up move up
-bindsym Mod4+Shift+Right move right
+bindsym Mod1+Shift+Left move left
+bindsym Mod1+Shift+Down move down
+bindsym Mod1+Shift+Up move up
+bindsym Mod1+Shift+Right move right
 
 # split in horizontal orientation
-bindsym Mod4+h split h
+bindsym Mod1+h split h
 
 # split in vertical orientation
-bindsym Mod4+v split v
+bindsym Mod1+v split v
 
 # enter fullscreen mode for the focused container
-bindsym Mod4+f fullscreen toggle
+bindsym Mod1+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym Mod4+s layout stacking
-bindsym Mod4+w layout tabbed
-bindsym Mod4+e layout toggle split
+bindsym Mod1+s layout stacking
+bindsym Mod1+w layout tabbed
+bindsym Mod1+e layout toggle split
 
 # toggle tiling / floating
 bindsym Mod1+Shift+space floating toggle
@@ -92,7 +121,7 @@ bindsym Mod1+Shift+space floating toggle
 bindsym Mod1+space focus mode_toggle
 
 # focus the parent container
-bindsym Mod4+a focus parent
+bindsym Mod1+a focus parent
 
 # move the currently focused window to the scratchpad
 bindsym Mod1+Shift+minus move scratchpad
@@ -103,16 +132,27 @@ bindsym Mod1+minus scratchpad show
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
-set $ws6 "6"
+set $ws1 "1: </>"
+set $ws2 "2: 🌐"
+set $ws3 "3: 📂"
+set $ws4 "4: >_"
+set $ws5 "5: ⚙"
+set $ws6 "6: 🎵"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
+
+workspace 1 output HDMI1
+workspace 2 output HDMI1
+workspace 3 output LVDS1
+workspace 4 output LVDS1
+workspace 5 output LVDS1
+workspace 6 output LVDS1
+workspace 7 output LVDS1
+workspace 8 output LVDS1
+workspace 9 output LVDS1
+workspace 10 output LVDS1
 
 # switch to workspace
 bindsym Mod1+1 workspace number $ws1
@@ -170,25 +210,27 @@ mode "resize" {
         bindsym Mod1+r mode "default"
 }
 
-bindsym Mod1+r mode "resize"
+mode "gaps" {
+        bindsym i gaps inner all minus 2
+        bindsym o gaps outer all minus 2
+        bindsym I gaps inner all plus 2
+        bindsym O gaps outer all plus 2
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-bar {
-        colors {
-                background #2f343f
-                statusline #2f343f
-                separator #4b5262
-
-                # colour of border, background, and text
-                focused_workspace       #2f343f #bf616a #d8dee8
-                active_workspace        #2f343f #2f343f #d8dee8
-                inactive_workspace      #2f343f #2f343f #d8dee8
-                urgent_workspace       #2f343f #ebcb8b #2f343f
-        }
-        font pango:icomoon 11 
-        status_command i3status
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym Tab    mode "default"
 }
+
+# gaps
+gaps inner 5
+gaps outer 5
+smart_gaps on
+smart_borders on
+
+bindsym Mod1+r mode "resize"
+bindsym Mod1+g mode "gaps"
+
 
 focus_follows_mouse no
 
@@ -198,33 +240,41 @@ bindsym --release Print exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~
 # OSX-like area selection screenshots
 bindsym --release Shift+Print exec scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`' # Area selection
 
-# Lock screen
-bindsym Mod1+Control+l exec loginctl lock-session
-# Sleep
-bindsym Mod1+Control+s exec i3lock -c 000000; exec systemctl suspend
+## Rotate monitor
+# Up direction
+bindsym --release Control+Mod1+Up exec xrandr --output LVDS1 --rotate normal 
+# Left direction
+bindsym --release Control+Mod1+Left exec xrandr --output LVDS1 --rotate left 
+# Down direction
+bindsym --release Control+Mod1+Down exec xrandr --output LVDS1 --rotate inverted
+# Right direction
+bindsym --release Control+Mod1+Right exec xrandr --output LVDS1 --rotate right
+
+## Lock screen
+bindsym Mod1+Control+l exec dm-tool lock
+## Sleep
+#bindsym Mod1+Control+s exec i3lock -c 000000; exec systemctl suspend
 
 # window rules, you can find the window class using xprop
-for_window [class=".*"] border pixel 1
-assign [class=URxvt|Vim|jetbrains-idea] 1
-assign [class=Chromium|Firefox] 2
-assign [class=Thunar|Thunderbird|Xarchiver] 3
-assign [class=Geany|Evince|Gucharmap|Soffice|libreoffice*] 4
-assign [class=Audacity|Vlc|mpv|Ghb|Xfburn|Gimp*|Inkscape] 5
-assign [class=Lxappearance|System-config-printer.py|Lxtask|GParted|Pavucontrol|Exo-helper*|Lxrandr|Arandr] 6
+for_window [class=".*"] border pixel 3
+assign [class=Vim|jetbrains-idea|Code|Subl3] $ws1
+assign [class=Chromium|Firefox] $ws2
+assign [class=Thunar|Thunderbird|Xarchiver] $ws3
+assign [class=URxvt|Termite] $ws4
+assign [class=Lxappearance|System-config-printer.py|Lxtask|GParted|Pavucontrol|Exo-helper*|Lxrandr|Arandr] $ws5
+assign [class=Audacity|Vlc|mpv|Ghb|Xfburn|Gimp*|Inkscape] $ws6
+
+
 for_window [class=Viewnior|feh|Audacious|File-roller|Lxappearance|Lxtask|Pavucontrol] floating enable
 for_window [class=URxvt|Firefox|Geany|Evince|Soffice|libreoffice*|mpv|Ghb|Xfburn|Gimp*|Inkscape|Vlc|Lxappearance|Audacity] focus
 for_window [class=Xfburn|GParted|System-config-printer.py|Lxtask|Pavucontrol|Exo-helper*|Lxrandr|Arandr] focus
 
 # colour of border, background, text, indicator, and child_border
+client.focused              #ffffff #ffffff #000000 #2e9ef4 #ffffff
 client.focused_inactive     #2f343f #2f343f #d8dee8 #2f343f #2f343f
 client.unfocused            #2f343f #2f343f #d8dee8 #2f343f #2f343f
 client.urgent               #2f343f #2f343f #d8dee8 #2f343f #2f343f
 client.placeholder          #2f343f #2f343f #d8dee8 #2f343f #2f343f
 client.background           #2f343f
 
-# Auto-start
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork # Use loginctl lock-session to lock your screen.
-exec --no-startup-id picom
-exec --no-startup-id xsettingsd &
-exec --no-startup-id nm-applet
 
