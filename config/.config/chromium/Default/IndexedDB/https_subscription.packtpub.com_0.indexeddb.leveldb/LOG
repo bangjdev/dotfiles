@@ -1,0 +1,6 @@
+2021/05/15-19:47:37.324 7243 Creating DB /home/bangjdev/.config/chromium/Default/IndexedDB/https_subscription.packtpub.com_0.indexeddb.leveldb since it was missing.
+2021/05/15-19:47:37.477 7243 Reusing MANIFEST /home/bangjdev/.config/chromium/Default/IndexedDB/https_subscription.packtpub.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/05/15-19:48:31.334 7242 Level-0 table #5: started
+2021/05/15-19:48:31.383 7242 Level-0 table #5: 1268 bytes OK
+2021/05/15-19:48:31.458 7242 Delete type=0 #3
+2021/05/15-19:48:31.462 739c Manual compaction at level-0 from (begin) .. (end); will stop at (end)

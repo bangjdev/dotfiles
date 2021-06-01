@@ -1,0 +1,24 @@
+2021/05/31-22:07:17.252 1f7d Reusing MANIFEST /home/bangjdev/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/05/31-22:07:17.252 1f7d Recovering log #403
+2021/05/31-22:07:17.253 1f7d Reusing old log /home/bangjdev/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000403.log 
+2021/05/31-22:07:19.472 1f3a Level-0 table #409: started
+2021/05/31-22:07:19.521 1f3a Level-0 table #409: 76444 bytes OK
+2021/05/31-22:07:19.669 1f3a Delete type=0 #403
+2021/05/31-22:07:19.669 1f3a Manual compaction at level-0 from '\x00G\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00H\x00\x00\x00' @ 0 : 0; will stop at (end)
+2021/05/31-22:07:44.203 1f3a Level-0 table #411: started
+2021/05/31-22:07:44.252 1f3a Level-0 table #411: 22140 bytes OK
+2021/05/31-22:07:44.455 1f3a Delete type=0 #408
+2021/05/31-22:07:44.455 1f3a Manual compaction at level-0 from '\x00H\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00I\x00\x00\x00' @ 0 : 0; will stop at '\x00H\x02\x02\x01\x14\x00s\x00h\x00e\x00l\x00l\x00_\x00i\x00d\x00e\x00n\x00t\x00i\x00f\x00i\x00e\x00r\x00_\x00k\x00e\x00y' @ 209988 : 1
+2021/05/31-22:07:44.455 1f3a Compacting 1@0 + 1@1 files
+2021/05/31-22:07:44.554 1f3a Generated table #412@0: 508 keys, 6254 bytes
+2021/05/31-22:07:44.554 1f3a Compacted 1@0 + 1@1 files => 6254 bytes
+2021/05/31-22:07:44.661 1f3a compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/05/31-22:07:44.661 1f3a Delete type=2 #411
+2021/05/31-22:07:44.662 1f3a Manual compaction at level-0 from '\x00H\x02\x02\x01\x14\x00s\x00h\x00e\x00l\x00l\x00_\x00i\x00d\x00e\x00n\x00t\x00i\x00f\x00i\x00e\x00r\x00_\x00k\x00e\x00y' @ 209988 : 1 .. '\x00I\x00\x00\x00' @ 0 : 0; will stop at (end)
+2021/05/31-22:09:49.613 1f7d Compacting 1@1 + 1@2 files
+2021/05/31-22:09:49.720 1f7d Generated table #413@1: 294 keys, 14753 bytes
+2021/05/31-22:09:49.720 1f7d Compacted 1@1 + 1@2 files => 14753 bytes
+2021/05/31-22:09:49.794 1f7d compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/05/31-22:09:49.794 1f7d Delete type=2 #412
+2021/05/31-22:09:49.794 1f7d Delete type=2 #409
+2021/05/31-22:09:49.794 1f7d Delete type=2 #406

@@ -1,0 +1,6 @@
+2021/05/30-19:11:38.048 65d4 Creating DB /home/bangjdev/.config/chromium/Default/IndexedDB/https_groupe-reussite.fr_0.indexeddb.leveldb since it was missing.
+2021/05/30-19:11:38.202 65d4 Reusing MANIFEST /home/bangjdev/.config/chromium/Default/IndexedDB/https_groupe-reussite.fr_0.indexeddb.leveldb/MANIFEST-000001
+2021/05/30-19:36:11.609 716b Level-0 table #5: started
+2021/05/30-19:36:11.658 716b Level-0 table #5: 6099 bytes OK
+2021/05/30-19:36:11.732 716b Delete type=0 #3
+2021/05/30-19:36:11.732 716b Manual compaction at level-0 from (begin) .. (end); will stop at (end)

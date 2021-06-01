@@ -1,0 +1,8 @@
+2021/05/07-21:20:51.686 2647 Reusing MANIFEST /home/bangjdev/.config/chromium/Default/IndexedDB/https_hopamchuan.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/05/07-21:20:51.686 2647 Recovering log #62
+2021/05/07-21:20:51.686 2647 Reusing old log /home/bangjdev/.config/chromium/Default/IndexedDB/https_hopamchuan.com_0.indexeddb.leveldb/000062.log 
+2021/05/07-21:35:20.559 2ffa Level-0 table #66: started
+2021/05/07-21:35:20.559 2ffa Level-0 table #66: 0 bytes OK
+2021/05/07-21:35:20.636 2ffa Delete type=0 #62
+2021/05/07-21:35:20.636 2ffa Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/05/07-21:35:20.636 2ffa Manual compaction at level-1 from (begin) .. (end); will stop at (end)

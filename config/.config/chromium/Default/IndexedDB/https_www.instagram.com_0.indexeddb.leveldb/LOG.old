@@ -1,0 +1,17 @@
+2021/05/03-19:36:57.035 10f7a Creating DB /home/bangjdev/.config/chromium/Default/IndexedDB/https_www.instagram.com_0.indexeddb.leveldb since it was missing.
+2021/05/03-19:36:57.220 10f7a Reusing MANIFEST /home/bangjdev/.config/chromium/Default/IndexedDB/https_www.instagram.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/05/03-19:38:13.342 10eee Level-0 table #5: started
+2021/05/03-19:38:13.445 10eee Level-0 table #5: 1300781 bytes OK
+2021/05/03-19:38:13.569 10eee Delete type=0 #3
+2021/05/03-19:38:41.773 10ba9 Level-0 table #7: started
+2021/05/03-19:38:41.828 10ba9 Level-0 table #7: 518209 bytes OK
+2021/05/03-19:38:41.902 10ba9 Delete type=0 #4
+2021/05/03-19:38:41.903 10ba9 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/05/03-19:38:41.903 10ba9 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x03\x01\x0a\x00p\x00o\x00s\x00t\x00s\x00.\x00b\x00y\x00I\x00d' @ 3199 : 0
+2021/05/03-19:38:41.903 10ba9 Compacting 1@1 + 1@2 files
+2021/05/03-19:38:41.962 10ba9 Generated table #8@1: 44 keys, 22790 bytes
+2021/05/03-19:38:41.962 10ba9 Compacted 1@1 + 1@2 files => 22790 bytes
+2021/05/03-19:38:42.036 10ba9 compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/05/03-19:38:42.036 10ba9 Delete type=2 #5
+2021/05/03-19:38:42.036 10ba9 Delete type=2 #7
+2021/05/03-19:38:42.037 10ba9 Manual compaction at level-1 from '\x00\x01\x01\x03\x01\x0a\x00p\x00o\x00s\x00t\x00s\x00.\x00b\x00y\x00I\x00d' @ 3199 : 0 .. (end); will stop at (end)

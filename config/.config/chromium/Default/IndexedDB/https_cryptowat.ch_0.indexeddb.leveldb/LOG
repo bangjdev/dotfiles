@@ -1,0 +1,15 @@
+2021/05/14-19:21:05.267 60d0 Reusing MANIFEST /home/bangjdev/.config/chromium/Default/IndexedDB/https_cryptowat.ch_0.indexeddb.leveldb/MANIFEST-000001
+2021/05/14-19:21:05.267 60d0 Recovering log #26
+2021/05/14-19:21:05.268 60d0 Reusing old log /home/bangjdev/.config/chromium/Default/IndexedDB/https_cryptowat.ch_0.indexeddb.leveldb/000026.log 
+2021/05/14-19:22:09.884 60e0 Level-0 table #31: started
+2021/05/14-19:22:09.933 60e0 Level-0 table #31: 190 bytes OK
+2021/05/14-19:22:10.007 60e0 Delete type=0 #26
+2021/05/14-19:22:10.007 60e0 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/05/14-19:22:10.007 60e0 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x00\x00\x00\x05' @ 77 : 1
+2021/05/14-19:22:10.007 60e0 Compacting 1@1 + 1@2 files
+2021/05/14-19:22:10.056 60e0 Generated table #32@1: 27 keys, 699 bytes
+2021/05/14-19:22:10.056 60e0 Compacted 1@1 + 1@2 files => 699 bytes
+2021/05/14-19:22:10.130 60e0 compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/05/14-19:22:10.131 60e0 Delete type=2 #28
+2021/05/14-19:22:10.131 60e0 Delete type=2 #31
+2021/05/14-19:22:10.132 60e0 Manual compaction at level-1 from '\x00\x00\x00\x00\x05' @ 77 : 1 .. (end); will stop at (end)

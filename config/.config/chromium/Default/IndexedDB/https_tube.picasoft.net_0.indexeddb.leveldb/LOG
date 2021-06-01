@@ -1,0 +1,6 @@
+2021/05/05-02:36:12.181 1ec1c Creating DB /home/bangjdev/.config/chromium/Default/IndexedDB/https_tube.picasoft.net_0.indexeddb.leveldb since it was missing.
+2021/05/05-02:36:12.384 1ec1c Reusing MANIFEST /home/bangjdev/.config/chromium/Default/IndexedDB/https_tube.picasoft.net_0.indexeddb.leveldb/MANIFEST-000001
+2021/05/05-02:36:19.101 1eb0d Level-0 table #5: started
+2021/05/05-02:36:19.220 1eb0d Level-0 table #5: 3720673 bytes OK
+2021/05/05-02:36:19.295 1eb0d Delete type=0 #3
+2021/05/05-02:36:19.295 1eb0d Manual compaction at level-0 from (begin) .. (end); will stop at (end)

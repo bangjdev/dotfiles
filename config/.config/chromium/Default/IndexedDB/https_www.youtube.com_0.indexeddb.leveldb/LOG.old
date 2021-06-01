@@ -1,0 +1,21 @@
+2021/05/31-20:33:17.844 b93 Reusing MANIFEST /home/bangjdev/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/05/31-20:33:17.845 b93 Recovering log #399
+2021/05/31-20:33:17.993 b93 Reusing old log /home/bangjdev/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000399.log 
+2021/05/31-20:33:17.993 b93 Delete type=2 #398
+2021/05/31-20:33:19.830 f02 Level-0 table #404: started
+2021/05/31-20:33:20.044 f02 Level-0 table #404: 46843 bytes OK
+2021/05/31-20:33:20.218 f02 Delete type=0 #399
+2021/05/31-20:33:20.218 f02 Manual compaction at level-0 from '\x00F\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00G\x00\x00\x00' @ 0 : 0; will stop at '\x00F\x02\x02\x01\x14\x00s\x00h\x00e\x00l\x00l\x00_\x00i\x00d\x00e\x00n\x00t\x00i\x00f\x00i\x00e\x00r\x00_\x00k\x00e\x00y' @ 208375 : 1
+2021/05/31-20:33:20.218 f02 Compacting 1@0 + 1@1 files
+2021/05/31-20:33:20.358 f02 Generated table #405@0: 537 keys, 8816 bytes
+2021/05/31-20:33:20.358 f02 Compacted 1@0 + 1@1 files => 8816 bytes
+2021/05/31-20:33:20.604 f02 compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/05/31-20:33:20.604 f02 Delete type=2 #404
+2021/05/31-20:33:20.604 f02 Manual compaction at level-0 from '\x00F\x02\x02\x01\x14\x00s\x00h\x00e\x00l\x00l\x00_\x00i\x00d\x00e\x00n\x00t\x00i\x00f\x00i\x00e\x00r\x00_\x00k\x00e\x00y' @ 208375 : 1 .. '\x00G\x00\x00\x00' @ 0 : 0; will stop at (end)
+2021/05/31-20:40:55.763 fcb Compacting 1@1 + 1@2 files
+2021/05/31-20:40:55.870 fcb Generated table #406@1: 313 keys, 17434 bytes
+2021/05/31-20:40:55.870 fcb Compacted 1@1 + 1@2 files => 17434 bytes
+2021/05/31-20:40:55.944 fcb compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/05/31-20:40:55.944 fcb Delete type=2 #405
+2021/05/31-20:40:55.944 fcb Delete type=2 #401
+2021/05/31-20:40:55.944 fcb Delete type=2 #395

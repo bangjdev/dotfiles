@@ -1,0 +1,9 @@
+2021/05/31-20:03:12.957 35c Reusing MANIFEST /home/bangjdev/.config/chromium/Default/Extension State/MANIFEST-000001
+2021/05/31-20:03:12.958 35c Recovering log #2411
+2021/05/31-20:03:14.283 35c Reusing old log /home/bangjdev/.config/chromium/Default/Extension State/002411.log 
+2021/05/31-20:58:32.881 1137 Level-0 table #2416: started
+2021/05/31-20:58:33.081 1137 Level-0 table #2416: 2197800 bytes OK
+2021/05/31-20:58:33.157 1137 Delete type=0 #2411
+2021/05/31-23:48:45.673 2cf5 Level-0 table #2418: started
+2021/05/31-23:48:45.856 2cf5 Level-0 table #2418: 2187695 bytes OK
+2021/05/31-23:48:46.007 2cf5 Delete type=0 #2415

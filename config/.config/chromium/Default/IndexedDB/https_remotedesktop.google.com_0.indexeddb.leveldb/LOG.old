@@ -1,0 +1,8 @@
+2021/05/07-23:48:03.408 4884 Reusing MANIFEST /home/bangjdev/.config/chromium/Default/IndexedDB/https_remotedesktop.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/05/07-23:48:03.408 4884 Recovering log #358
+2021/05/07-23:48:03.408 4884 Reusing old log /home/bangjdev/.config/chromium/Default/IndexedDB/https_remotedesktop.google.com_0.indexeddb.leveldb/000358.log 
+2021/05/07-23:48:35.412 4884 Level-0 table #362: started
+2021/05/07-23:48:35.412 4884 Level-0 table #362: 0 bytes OK
+2021/05/07-23:48:35.559 4884 Delete type=0 #358
+2021/05/07-23:48:35.559 4884 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/05/07-23:48:35.559 4884 Manual compaction at level-1 from (begin) .. (end); will stop at (end)

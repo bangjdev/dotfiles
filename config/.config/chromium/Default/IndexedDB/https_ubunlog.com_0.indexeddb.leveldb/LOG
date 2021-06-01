@@ -1,0 +1,6 @@
+2021/05/29-13:04:21.249 3e4f Creating DB /home/bangjdev/.config/chromium/Default/IndexedDB/https_ubunlog.com_0.indexeddb.leveldb since it was missing.
+2021/05/29-13:04:21.451 3e4f Reusing MANIFEST /home/bangjdev/.config/chromium/Default/IndexedDB/https_ubunlog.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/05/29-13:04:26.769 3d0e Level-0 table #5: started
+2021/05/29-13:04:26.818 3d0e Level-0 table #5: 5846 bytes OK
+2021/05/29-13:04:26.892 3d0e Delete type=0 #3
+2021/05/29-13:04:26.892 3d0e Manual compaction at level-0 from (begin) .. (end); will stop at (end)

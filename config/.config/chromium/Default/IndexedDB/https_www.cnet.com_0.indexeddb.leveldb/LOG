@@ -1,0 +1,6 @@
+2021/05/30-23:33:38.379 9d1f Creating DB /home/bangjdev/.config/chromium/Default/IndexedDB/https_www.cnet.com_0.indexeddb.leveldb since it was missing.
+2021/05/30-23:33:38.597 9d1f Reusing MANIFEST /home/bangjdev/.config/chromium/Default/IndexedDB/https_www.cnet.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/05/30-23:33:42.320 9d04 Level-0 table #5: started
+2021/05/30-23:33:42.369 9d04 Level-0 table #5: 831 bytes OK
+2021/05/30-23:33:42.443 9d04 Delete type=0 #3
+2021/05/30-23:33:42.444 9d04 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

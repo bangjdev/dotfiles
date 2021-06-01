@@ -1,0 +1,6 @@
+2021/05/06-22:32:02.654 7f4d Creating DB /home/bangjdev/.config/chromium/Default/IndexedDB/https_www.linternaute.com_0.indexeddb.leveldb since it was missing.
+2021/05/06-22:32:02.820 7f4d Reusing MANIFEST /home/bangjdev/.config/chromium/Default/IndexedDB/https_www.linternaute.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/05/06-22:41:10.815 7da3 Level-0 table #5: started
+2021/05/06-22:41:10.888 7da3 Level-0 table #5: 16823 bytes OK
+2021/05/06-22:41:10.962 7da3 Delete type=0 #3
+2021/05/06-22:41:10.962 7da3 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

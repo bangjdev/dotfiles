@@ -1,0 +1,15 @@
+2021/05/31-15:06:50.695 8119 Reusing MANIFEST /home/bangjdev/.config/chromium/Default/IndexedDB/https_fontawesome.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/05/31-15:06:50.695 8119 Recovering log #15
+2021/05/31-15:06:50.695 8119 Reusing old log /home/bangjdev/.config/chromium/Default/IndexedDB/https_fontawesome.com_0.indexeddb.leveldb/000015.log 
+2021/05/31-15:07:46.753 8119 Level-0 table #20: started
+2021/05/31-15:07:46.802 8119 Level-0 table #20: 6637 bytes OK
+2021/05/31-15:07:46.876 8119 Delete type=0 #15
+2021/05/31-15:07:46.876 8119 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/05/31-15:07:46.877 8119 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01\x05\x00s\x00t\x00a\x00t\x00e' @ 1318 : 1
+2021/05/31-15:07:46.877 8119 Compacting 1@1 + 1@2 files
+2021/05/31-15:07:46.986 8119 Generated table #21@1: 54 keys, 1198 bytes
+2021/05/31-15:07:46.986 8119 Compacted 1@1 + 1@2 files => 1198 bytes
+2021/05/31-15:07:47.072 8119 compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/05/31-15:07:47.072 8119 Delete type=2 #20
+2021/05/31-15:07:47.072 8119 Delete type=2 #17
+2021/05/31-15:07:47.073 8119 Manual compaction at level-1 from '\x00\x01\x01\x02\x01\x05\x00s\x00t\x00a\x00t\x00e' @ 1318 : 1 .. (end); will stop at (end)
