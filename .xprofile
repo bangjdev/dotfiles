@@ -1,4 +1,0 @@
-sh ~/.screenlayout/default.sh
-xset -b
-sh ~/.fehbg
-ibus-daemon &
